@@ -117,41 +117,113 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named todo
+# Target rules for targets named DiaryApp
 
 # Build rule for target.
-todo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 todo
-.PHONY : todo
+DiaryApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DiaryApp
+.PHONY : DiaryApp
 
 # fast build rule for target.
-todo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/todo.dir/build.make CMakeFiles/todo.dir/build
-.PHONY : todo/fast
+DiaryApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/build
+.PHONY : DiaryApp/fast
 
-main.o: main.cc.o
+DiaryData.o: DiaryData.cpp.o
+.PHONY : DiaryData.o
+
+# target to build an object file
+DiaryData.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/DiaryData.cpp.o
+.PHONY : DiaryData.cpp.o
+
+DiaryData.i: DiaryData.cpp.i
+.PHONY : DiaryData.i
+
+# target to preprocess a source file
+DiaryData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/DiaryData.cpp.i
+.PHONY : DiaryData.cpp.i
+
+DiaryData.s: DiaryData.cpp.s
+.PHONY : DiaryData.s
+
+# target to generate assembly for a file
+DiaryData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/DiaryData.cpp.s
+.PHONY : DiaryData.cpp.s
+
+DiaryWindow.o: DiaryWindow.cpp.o
+.PHONY : DiaryWindow.o
+
+# target to build an object file
+DiaryWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/DiaryWindow.cpp.o
+.PHONY : DiaryWindow.cpp.o
+
+DiaryWindow.i: DiaryWindow.cpp.i
+.PHONY : DiaryWindow.i
+
+# target to preprocess a source file
+DiaryWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/DiaryWindow.cpp.i
+.PHONY : DiaryWindow.cpp.i
+
+DiaryWindow.s: DiaryWindow.cpp.s
+.PHONY : DiaryWindow.s
+
+# target to generate assembly for a file
+DiaryWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/DiaryWindow.cpp.s
+.PHONY : DiaryWindow.cpp.s
+
+main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
-main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/todo.dir/build.make CMakeFiles/todo.dir/main.cc.o
-.PHONY : main.cc.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main.i: main.cc.i
+main.i: main.cpp.i
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/todo.dir/build.make CMakeFiles/todo.dir/main.cc.i
-.PHONY : main.cc.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.cc.s
+main.s: main.cpp.s
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/todo.dir/build.make CMakeFiles/todo.dir/main.cc.s
-.PHONY : main.cc.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+utils/FileUtils.o: utils/FileUtils.cpp.o
+.PHONY : utils/FileUtils.o
+
+# target to build an object file
+utils/FileUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/utils/FileUtils.cpp.o
+.PHONY : utils/FileUtils.cpp.o
+
+utils/FileUtils.i: utils/FileUtils.cpp.i
+.PHONY : utils/FileUtils.i
+
+# target to preprocess a source file
+utils/FileUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/utils/FileUtils.cpp.i
+.PHONY : utils/FileUtils.cpp.i
+
+utils/FileUtils.s: utils/FileUtils.cpp.s
+.PHONY : utils/FileUtils.s
+
+# target to generate assembly for a file
+utils/FileUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/utils/FileUtils.cpp.s
+.PHONY : utils/FileUtils.cpp.s
 
 # Help Target
 help:
@@ -161,10 +233,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... todo"
+	@echo "... DiaryApp"
+	@echo "... DiaryData.o"
+	@echo "... DiaryData.i"
+	@echo "... DiaryData.s"
+	@echo "... DiaryWindow.o"
+	@echo "... DiaryWindow.i"
+	@echo "... DiaryWindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... utils/FileUtils.o"
+	@echo "... utils/FileUtils.i"
+	@echo "... utils/FileUtils.s"
 .PHONY : help
 
 

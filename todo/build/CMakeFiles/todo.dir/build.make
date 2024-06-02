@@ -69,28 +69,28 @@ include CMakeFiles/todo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/todo.dir/flags.make
 
-CMakeFiles/todo.dir/main.cc.o: CMakeFiles/todo.dir/flags.make
-CMakeFiles/todo.dir/main.cc.o: /Users/vvstenin44/Desktop/todo/main.cc
-CMakeFiles/todo.dir/main.cc.o: CMakeFiles/todo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/vvstenin44/Desktop/todo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/todo.dir/main.cc.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todo.dir/main.cc.o -MF CMakeFiles/todo.dir/main.cc.o.d -o CMakeFiles/todo.dir/main.cc.o -c /Users/vvstenin44/Desktop/todo/main.cc
+CMakeFiles/todo.dir/main.cpp.o: CMakeFiles/todo.dir/flags.make
+CMakeFiles/todo.dir/main.cpp.o: /Users/vvstenin44/Desktop/todo/main.cpp
+CMakeFiles/todo.dir/main.cpp.o: CMakeFiles/todo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/vvstenin44/Desktop/todo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/todo.dir/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/todo.dir/main.cpp.o -MF CMakeFiles/todo.dir/main.cpp.o.d -o CMakeFiles/todo.dir/main.cpp.o -c /Users/vvstenin44/Desktop/todo/main.cpp
 
-CMakeFiles/todo.dir/main.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/todo.dir/main.cc.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vvstenin44/Desktop/todo/main.cc > CMakeFiles/todo.dir/main.cc.i
+CMakeFiles/todo.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/todo.dir/main.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vvstenin44/Desktop/todo/main.cpp > CMakeFiles/todo.dir/main.cpp.i
 
-CMakeFiles/todo.dir/main.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/todo.dir/main.cc.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vvstenin44/Desktop/todo/main.cc -o CMakeFiles/todo.dir/main.cc.s
+CMakeFiles/todo.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/todo.dir/main.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vvstenin44/Desktop/todo/main.cpp -o CMakeFiles/todo.dir/main.cpp.s
 
 # Object files for target todo
 todo_OBJECTS = \
-"CMakeFiles/todo.dir/main.cc.o"
+"CMakeFiles/todo.dir/main.cpp.o"
 
 # External object files for target todo
 todo_EXTERNAL_OBJECTS =
 
-todo: CMakeFiles/todo.dir/main.cc.o
+todo: CMakeFiles/todo.dir/main.cpp.o
 todo: CMakeFiles/todo.dir/build.make
 todo: /opt/homebrew/Cellar/gtk4/4.14.4/lib/libgtk-4.dylib
 todo: /opt/homebrew/Cellar/pango/1.52.2/lib/libpangocairo-1.0.dylib

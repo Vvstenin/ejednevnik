@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/vvstenin44/Desktop/todo/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/todo.dir/all
+all: CMakeFiles/DiaryApp.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/todo.dir/clean
+clean: CMakeFiles/DiaryApp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/todo.dir
+# Target rules for target CMakeFiles/DiaryApp.dir
 
 # All Build rule for target.
-CMakeFiles/todo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/todo.dir/build.make CMakeFiles/todo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/todo.dir/build.make CMakeFiles/todo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vvstenin44/Desktop/todo/build/CMakeFiles --progress-num=1,2 "Built target todo"
-.PHONY : CMakeFiles/todo.dir/all
+CMakeFiles/DiaryApp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vvstenin44/Desktop/todo/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target DiaryApp"
+.PHONY : CMakeFiles/DiaryApp.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/todo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vvstenin44/Desktop/todo/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/todo.dir/all
+CMakeFiles/DiaryApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vvstenin44/Desktop/todo/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DiaryApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vvstenin44/Desktop/todo/build/CMakeFiles 0
-.PHONY : CMakeFiles/todo.dir/rule
+.PHONY : CMakeFiles/DiaryApp.dir/rule
 
 # Convenience name for target.
-todo: CMakeFiles/todo.dir/rule
-.PHONY : todo
+DiaryApp: CMakeFiles/DiaryApp.dir/rule
+.PHONY : DiaryApp
 
 # clean rule for target.
-CMakeFiles/todo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/todo.dir/build.make CMakeFiles/todo.dir/clean
-.PHONY : CMakeFiles/todo.dir/clean
+CMakeFiles/DiaryApp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiaryApp.dir/build.make CMakeFiles/DiaryApp.dir/clean
+.PHONY : CMakeFiles/DiaryApp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

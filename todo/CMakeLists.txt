@@ -1,12 +1,14 @@
-cmake_minimum_required(VERSION 3.18)
-
-set(project "todo")
-project(${project})
+cmake_minimum_required(VERSION 3.10)
+project(DiaryApp)
 
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(GTK4 REQUIRED IMPORTED_TARGET gtk4)
+pkg_check_modules(GTK REQUIRED gtk4)
 
-add_executable(${project} main.cc)
-target_link_libraries(${project} PRIVATE PkgConfig::GTK4)
+include_directories(${GTK_INCLUDE_DIRS})
+link_directories(${GTK_LIBRARY_DIRS})
+
+add_executable(DiaryApp main.cpp DiaryWindow.cpp DiaryData.cpp utils/FileUtils.cpp)
+
+target_link_libraries(DiaryApp ${GTK_LIBRARIES})
